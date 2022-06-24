@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">e-live</string>
+    <string name="logo">Лого</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="entrance">Войти</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="forgot_my_password">Забыл пароль?</string>
 </resources>
