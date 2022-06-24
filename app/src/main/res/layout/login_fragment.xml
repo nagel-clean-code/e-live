@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="0dp"
+            android:layout_height="350sp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/logo"
+            android:paddingTop="46sp"
+            android:paddingBottom="46sp"
+            android:src="@drawable/img"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineBottomImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linerLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintBottom_toTopOf="@id/guidelineBottomInputPanel">
+
+            <EditText
+                android:id="@+id/input_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_background"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:stretchColumns="1" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_input_background"
+                android:hint="@string/password"
+                android:padding="10dp"
+                android:selectAllOnFocus="true"
+                android:stretchColumns="1" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="24dp"
+            android:id="@+id/button"
+            android:backgroundTint="#5B9249"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50sp"
+            android:padding="12dp"
+            android:layout_marginTop="60sp"
+            android:layout_marginEnd="50sp"
+            android:text="@string/entrance"
+            android:textColor="#FAE7DB"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@id/linerLay" />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_my_password"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintRight_toLeftOf="@id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/guidelineBottomInputPanel" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/guidelineLeft"
+            app:layout_constraintRight_toLeftOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47" />
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomInputPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

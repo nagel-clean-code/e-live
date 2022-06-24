@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WelcomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="0dp"
+        android:layout_height="350sp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo"
+        android:paddingTop="46sp"
+        android:paddingBottom="46sp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottomImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:shadowColor="#A3A1A1"
+            android:shadowDy="10"
+            android:shadowDx="10"
+            android:shadowRadius="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#367921"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_logo" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottomImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

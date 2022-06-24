@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/add_recipe"
+        android:icon="@drawable/ic_manage_search"
+        android:title="Добавить" />
+    <item
+        android:id="@+id/find_recipe"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Поиск" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Настройки" />
+</menu>
