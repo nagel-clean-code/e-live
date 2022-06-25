@@ -18,7 +18,7 @@
             android:contentDescription="@string/logo"
             android:paddingTop="46sp"
             android:paddingBottom="46sp"
-            android:src="@drawable/img"
+            android:src="@drawable/welcome_logo"
             app:layout_constraintBottom_toBottomOf="@id/guidelineBottomImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
             app:layout_constraintStart_toStartOf="@id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@id/image_logo">
 
-            <EditText
+             <EditText
                 android:id="@+id/input_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
