@@ -3,7 +3,7 @@
     <string name="logo">Лого</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="entrance">Войти</string>
+    <string name="entrance">Вход</string>
     <string name="register">Зарегистрироваться</string>
     <string name="forgot_my_password">Забыл пароль?</string>
     <!-- TODO: Remove or change this placeholder text -->
