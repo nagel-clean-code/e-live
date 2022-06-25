@@ -57,6 +57,22 @@
                 android:selectAllOnFocus="true"
                 android:stretchColumns="1"
                 android:textSize="24sp" />
+            <TextView
+                android:id="@+id/error_is_empty_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/read"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:text="@string/is_empty_error"/>
+            <TextView
+                android:id="@+id/text_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/read"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:text="@string/okerra_login_or_password"/>
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
@@ -141,6 +157,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.63" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

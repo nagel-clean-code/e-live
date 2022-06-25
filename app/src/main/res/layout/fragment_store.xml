@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-android:background="#0C2C04"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0C2C04"
     tools:context=".StoreFragment">
 
     <SearchView
@@ -24,54 +24,57 @@ android:background="#0C2C04"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:orientation="vertical"
         android:background="@drawable/custom_back_back"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" >
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#488734"
+            android:drawableRight="@drawable/ic_chevron_right"
             android:padding="12dp"
             android:text="Деревья"
+            android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="#FAE7DB"
             android:textSize="21sp"
-            android:drawableRight="@drawable/ic_chevron_right"
             android:textStyle="bold"
-            android:textAlignment="textStart"
             app:cornerRadius="24dp"
             app:strokeColor="@color/text_color" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#488734"
+            android:drawableRight="@drawable/ic_chevron_right"
             android:padding="12dp"
             android:text="Украшения"
+            android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="#FAE7DB"
             android:textSize="21sp"
             android:textStyle="bold"
-            android:textAlignment="textStart"
-            android:drawableRight="@drawable/ic_chevron_right"
             app:cornerRadius="24dp"
             app:strokeColor="@color/text_color" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#488734"
+            android:drawableRight="@drawable/ic_chevron_right"
             android:padding="12dp"
             android:text="Прочее"
-            android:drawableRight="@drawable/ic_chevron_right"
+            android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="#FAE7DB"
             android:textSize="21sp"
             android:textStyle="bold"
-            android:textAlignment="textStart"
             app:cornerRadius="24dp"
             app:strokeColor="@color/text_color" />
 

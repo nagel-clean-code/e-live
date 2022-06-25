@@ -9,7 +9,9 @@
         <item name="android:background">@drawable/button_main</item>
     </style>
 
-
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
 
     <style name="roundedImageView">
         <item name="cornerFamily">rounded</item>
