@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="size_arr">
+        <item>10 см</item>
+        <item>30 см</item>
+        <item>50 см</item>
+        <item>100 см</item>
+        <item>150 см</item>
+        <item>200 см</item>
+        <item>300 см</item>
+        <item>500 см</item>
+    </string-array>
+</resources>
