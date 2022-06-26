@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity(), Navigator {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
-        binding.bottomNavigationView.setOnItemSelectedListener {
+        binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
+        binding.bottomNavigationView  //TODO DataBinding совсем не хочет работать
+            .setOnItemSelectedListener {
             val bufFragment = when (it.itemId) {
                 R.id.home -> HomeFragment()
                 R.id.store -> StoreFragment()
@@ -116,8 +116,7 @@ class MainActivity : AppCompatActivity(), Navigator {
     }
 
     override fun visibleNavigationMenu(flag: Boolean) {
-        findViewById<BottomNavigationView>(R.id.bottom_navigation_view).visibility =
-            if (flag) View.VISIBLE else View.GONE
+        binding.bottomNavigationView.visibility = if (flag) View.VISIBLE else View.GONE
     }
 
     override fun goBack() {

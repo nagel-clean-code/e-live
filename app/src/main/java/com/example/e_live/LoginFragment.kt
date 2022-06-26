@@ -35,8 +35,12 @@ class LoginFragment : BaseFragment() {
     ): View? {
         initListenerButton()
         setupListenerResult()
-        navigator().visibleNavigationMenu(false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navigator().visibleNavigationMenu(false)
     }
 
     private fun initListenerButton(){
