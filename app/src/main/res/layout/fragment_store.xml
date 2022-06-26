@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/background_2"
     tools:context=".StoreFragment">
 
     <SearchView
@@ -44,7 +44,7 @@
             android:textSize="21sp"
             android:textStyle="bold"
             app:cornerRadius="24dp"
-            app:strokeColor="@color/text_color" />
+            app:strokeColor="@color/text_color_welcome" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
@@ -60,7 +60,7 @@
             android:textSize="21sp"
             android:textStyle="bold"
             app:cornerRadius="24dp"
-            app:strokeColor="@color/text_color" />
+            app:strokeColor="@color/text_color_welcome" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
@@ -76,7 +76,7 @@
             android:textSize="21sp"
             android:textStyle="bold"
             app:cornerRadius="24dp"
-            app:strokeColor="@color/text_color" />
+            app:strokeColor="@color/text_color_welcome" />
 
     </LinearLayout>
 

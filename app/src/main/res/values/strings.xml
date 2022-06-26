@@ -100,4 +100,6 @@
     </string>
     <string name="is_empty_error">Заполните все поля!</string>
     <string name="okerra_login_or_password">Не верный логин или пароль</string>
+    <string name="hi">привет!</string>
+    <string name="scroll_to_right">Листай вправо</string>
 </resources>
