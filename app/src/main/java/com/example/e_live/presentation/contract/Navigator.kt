@@ -12,7 +12,9 @@ interface Navigator {
     fun showFragmentLogin()
     fun showFragmentHome()
     fun showFragmentRegistration()
+    fun showFragmentStore()
+    fun showFragmentBasket()
+    fun showFragmentProfile()
     fun visibleNavigationMenu(flag: Boolean)
     fun goBack()
-
 }
