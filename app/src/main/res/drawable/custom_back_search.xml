@@ -7,7 +7,7 @@
         android:bottomLeftRadius="20dp"
         android:bottomRightRadius="20dp"/>
 
-    <stroke android:color="#488734"
+    <stroke android:color="@color/button_color"
         android:width="4dp"/>
     <solid android:color="@color/white" />
 
