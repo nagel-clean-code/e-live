@@ -15,6 +15,8 @@ interface Navigator {
     fun showFragmentStore()
     fun showFragmentBasket()
     fun showFragmentProfile()
+    fun showFragmentShowTree()
+    fun showFragmentCard()
     fun visibleNavigationMenu(flag: Boolean)
     fun goBack()
 }

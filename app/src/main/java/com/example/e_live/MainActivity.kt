@@ -193,6 +193,14 @@ class MainActivity : AppCompatActivity(), Navigator {
         replaceFragment(ProfileFragment())
     }
 
+    override fun showFragmentShowTree() {
+        replaceFragment(ShowTreeFragment())
+    }
+
+    override fun showFragmentCard() {
+        replaceFragment(CardFragment())
+    }
+
     override fun visibleNavigationMenu(flag: Boolean) {
         binding.bottomNavigationView.visibility = if (flag) View.VISIBLE else View.GONE
     }
