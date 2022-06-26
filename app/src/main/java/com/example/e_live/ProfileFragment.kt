@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.e_live.presentation.contract.CustomAction
+import com.example.e_live.presentation.contract.HasCustomActionToolbar
 import com.example.e_live.presentation.viewmodels.ProfileViewModel
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : Fragment(), HasCustomActionToolbar {
 
     companion object {
         fun newInstance() = ProfileFragment()
@@ -29,4 +31,7 @@ class ProfileFragment : Fragment() {
         // TODO: Use the ViewModel
     }
 
+    override fun getCustomAction(): CustomAction {
+        return CustomAction(Constants.TYPE_ICON_DEFAULT, "Каталог")
+    }
 }

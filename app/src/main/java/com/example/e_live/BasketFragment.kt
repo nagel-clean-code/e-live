@@ -32,7 +32,7 @@ class BasketFragment : Fragment(), HasCustomActionToolbar {
     }
 
     override fun getCustomAction(): CustomAction {
-        return CustomAction(0, "Корзина")
+        return CustomAction(Constants.TYPE_ICON_DEFAULT, "Корзина")
     }
 
 }
